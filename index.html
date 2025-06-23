@@ -187,11 +187,11 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal()">&times;</span>
             <h2 style="text-align: center; margin-bottom: 2rem; color: #1e3c72;" data-translate="signup_title">Créer un compte</h2>
-            <form action="https://physique-tech.github.io/Physique-Tech-SMP-FPN/" method="POST">
+            
+            <!-- UN SEUL FORMULAIRE avec FormSubmit -->
             <form id="signupForm" action="https://formsubmit.co/contact.physique.tech@gmail.com" method="POST">
-            <form onsubmit="handleLogin(event)">
                 <!-- Champs cachés pour FormSubmit -->
-                <input type="hidden" name="_next" value="https://physique-tech.github.io/Physique-Tech-SMP-FPN/">
+                <input type="hidden" name="_next" value="index.html">
                 <input type="hidden" name="_subject" value="Nouvelle inscription - Club Physique Tech">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
@@ -233,13 +233,13 @@
                 </div>
                 <button type="submit" class="form-submit" data-translate="signup_submit">Créer le compte</button>
             </form>
+            
             <div class="form-toggle">
                 <span data-translate="already_member">Déjà membre?</span> 
                 <a href="#" onclick="showLoginModal()" data-translate="login_link">Se connecter</a>
             </div>
         </div>
     </div>
-    
     <!-- Success Message Modal -->
     <div id="successModal" class="modal">
         <div class="modal-content success-modal">
