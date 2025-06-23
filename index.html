@@ -191,7 +191,7 @@
             <!-- UN SEUL FORMULAIRE avec FormSubmit -->
             <form id="signupForm" action="https://formsubmit.co/contact.physique.tech@gmail.com" method="POST">
                 <!-- Champs cachés pour FormSubmit -->
-                <input type="hidden" name="_next" value="index.html">
+                <input type="hidden" name="_next" value="https://physique-tech.github.io/Physique-Tech-SMP-FPN/">
                 <input type="hidden" name="_subject" value="Nouvelle inscription - Club Physique Tech">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
@@ -271,6 +271,33 @@
             <button class="error-button" onclick="retryLogin()">Réessayer</button>
         </div>
     </div>
+
+    <script>
+        const form = document.getElementById("signupForm");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // منع الإرسال الفوري
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+            }).then(response => {
+            if (response.ok) {
+                // ✅ إعادة التوجيه اليدوي بعد النجاح
+                window.location.href = "https://physique-tech.github.io/Physique-Tech-SMP-FPN/";
+            } else {
+                alert("Échec de l'inscription. Veuillez réessayer.");
+            }
+            }).catch(error => {
+            alert("Erreur réseau. Vérifiez votre connexion.");
+            });
+        });
+    </script>
 
     <script src="translations.js"></script>
     <script src="script.js"></script>
