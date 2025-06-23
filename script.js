@@ -526,3 +526,57 @@ document.addEventListener('DOMContentLoaded', function() {
     
     console.log('Site Physique Tech initialisé avec succès!');
 });
+
+// Fonction pour basculer les options de spécialisation
+function toggleSpecialization() {
+    const cycle = document.getElementById('cycle').value;
+    const licenceOptions = document.getElementById('licenceOptions');
+    
+    if (cycle === 'licence') {
+        licenceOptions.style.display = 'block';
+        // Rendre les boutons radio requis si licence est sélectionnée
+        const radioButtons = licenceOptions.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(radio => radio.required = true);
+    } else {
+        licenceOptions.style.display = 'none';
+        // Retirer l'exigence et décocher les boutons radio
+        const radioButtons = licenceOptions.querySelectorAll('input[type="radio"]');
+        radioButtons.forEach(radio => {
+            radio.required = false;
+            radio.checked = false;
+        });
+    }
+}
+
+// Gestion de la soumission du formulaire d'inscription
+document.addEventListener('DOMContentLoaded', function() {
+    const signupForm = document.getElementById('signupForm');
+    
+    if (signupForm) {
+        signupForm.addEventListener('submit', function(e) {
+            // Vérifier si une spécialisation est sélectionnée pour licence
+            const cycle = document.getElementById('cycle').value;
+            if (cycle === 'licence') {
+                const specialisation = document.querySelector('input[name="Spécialisation"]:checked');
+                if (!specialisation) {
+                    e.preventDefault();
+                    alert('Veuillez sélectionner une spécialisation pour le cycle Licence.');
+                    return;
+                }
+            }
+            
+            // Fermer la modal d'inscription avant la soumission
+            document.getElementById('signupModal').style.display = 'none';
+            
+            // Afficher la modal de succès
+            document.getElementById('successModal').style.display = 'flex';
+            
+            // Optionnel : redirection après 3 secondes
+            setTimeout(function() {
+                // Le formulaire sera soumis automatiquement grâce à FormSubmit
+                // La redirection se fera via le champ _next de FormSubmit
+            }, 3000);
+        });
+    }
+});
+
