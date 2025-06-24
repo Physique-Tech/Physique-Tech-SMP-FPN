@@ -9,7 +9,10 @@
 <body>
     <header>
         <nav>
-            <div id="site-logo" class="logo" data-translate="site_name">Physique Tech</div>
+            <div id="site-logo" class="logo" data-translate="site_name">
+                <img src="LOGO.jpg" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+                Physique Tech
+            </div>
             <div class="menu-toggle" id="menu-toggle">☰</div>
             <ul class="nav-links" id="nav-links">
                 <li><a onclick="showSection('home');closeMenu()" data-translate="nav_home">Accueil</a></li>
@@ -19,12 +22,12 @@
                 <li><a onclick="showSection('contact');closeMenu()" data-translate="nav_contact">Contact</a></li>
             </ul>
             <div class="nav-right">
+                <button class="login-btn" onclick="openModal()" data-translate="login_btn">Connexion</button>
                 <div class="language-selector">
                     <button class="lang-btn active" onclick="changeLanguage('fr')">FR</button>
                     <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
-                    <button class="lang-btn" onclick="changeLanguage('es')">ES</button>
+                    <button class="lang-btn" onclick="changeLanguage('ar')">AR</button>
                 </div>
-                <button class="login-btn" onclick="openModal()" data-translate="login_btn">Connexion</button>
             </div>
         </nav>
     </header>
