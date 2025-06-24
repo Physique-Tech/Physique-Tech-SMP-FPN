@@ -9,20 +9,20 @@
 <body>
     <header>
         <nav>
-            <div class="logo" data-translate="site_name">Physique Tech</div>
-            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-            <ul class="nav-links">
-                <li><a onclick="showSection('home')" data-translate="nav_home">Accueil</a></li>
-                <li><a onclick="showSection('about')" data-translate="nav_about">À propos</a></li>
-                <li><a onclick="showSection('team')" data-translate="nav_team">Équipe</a></li>
-                <li><a onclick="showSection('activities')" data-translate="nav_activities">Activités</a></li>
-                <li><a onclick="showSection('contact')" data-translate="nav_contact">Contact</a></li>
+            <div id="site-logo" class="logo" data-translate="site_name">Physique Tech</div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a onclick="showSection('home');closeMenu()" data-translate="nav_home">Accueil</a></li>
+                <li><a onclick="showSection('about');closeMenu()" data-translate="nav_about">À propos</a></li>
+                <li><a onclick="showSection('team');closeMenu()" data-translate="nav_team">Équipe</a></li>
+                <li><a onclick="showSection('activities');closeMenu()" data-translate="nav_activities">Activités</a></li>
+                <li><a onclick="showSection('contact');closeMenu()" data-translate="nav_contact">Contact</a></li>
             </ul>
             <div class="nav-right">
                 <div class="language-selector">
                     <button class="lang-btn active" onclick="changeLanguage('fr')">FR</button>
                     <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
-                    <button class="lang-btn" onclick="changeLanguage('ar')">AR</button>
+                    <button class="lang-btn" onclick="changeLanguage('es')">ES</button>
                 </div>
                 <button class="login-btn" onclick="openModal()" data-translate="login_btn">Connexion</button>
             </div>
@@ -272,13 +272,13 @@
             <button class="error-button" onclick="retryLogin()">Réessayer</button>
         </div>
     </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
+    </script>
 
     <script>
-
-        function toggleMenu() {
-            document.getElementById("nav-links").classList.toggle("show");
-        }
-
         const form = document.getElementById("signupForm");
 
         form.addEventListener("submit", function (e) {
