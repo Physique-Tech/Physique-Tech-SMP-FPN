@@ -29,6 +29,7 @@ nav ul {
 
 /* ===== Media Query للهاتف ===== */
 @media (max-width: 768px) {
+
   nav ul {
     display: none; /* إخفاء الروابط في الهاتف */
     flex-direction: column;
@@ -97,14 +98,12 @@ nav {
     font-weight: bold;
     color: #1e3c72;
     display: flex;
+    padding-right: 25px;
+    padding-left: 5px;
     align-items: center;
     text-align: left;
     direction: ltr;
-}
-
-.logo.arabic {
-    direction: rtl;
-    text-align: right;
+    
 }
 
 .logo::before {
@@ -428,7 +427,7 @@ main {
     max-width: 450px;
     position: relative;
     animation: modalSlideIn 0.3s ease;
-    max-height: 90vh;
+    max-height: 55vh;
     overflow-y: auto;
 }
 
@@ -687,17 +686,29 @@ body.rtl .specialization-options label {
         display: none;
         margin-right: 50mm;
     }
-    
+
     .nav-right {
-        gap: 0rem;
+        flex-direction: column;
+        align-items: flex-end;
     }
-    
+
+    .login-btn {
+        order: 1;
+        font-size: 0.8rem;
+        margin-left: 20px;
+        width: 110px;
+        border-radius: 10px;
+    }    
+
     .language-selector {
+        order: 2;
+        justify-content: center;
+        width: 100%;
         display: flex;
         gap: 6px;
         justify-content: flex-start;
         margin-left: 10px;
-        margin-top: 8px;
+        margin-top: 4px;
     }
     
     .lang-btn {
@@ -706,12 +717,7 @@ body.rtl .specialization-options label {
         border-radius: 6px;
     }
 
-    .login-btn {
-        font-size: 0.85rem;
-        padding: 5px 9px;
-        margin-left: 20px;
-        border-radius: 6px;
-    }
+
     
     .hero h1 {
         font-size: 2.5rem;
@@ -721,8 +727,6 @@ body.rtl .specialization-options label {
         padding: 40px 1rem;
     }
     
-    .about-grid,
-    .team-grid,
     .activities-grid {
         grid-template-columns: 1fr;
     }
