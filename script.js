@@ -143,75 +143,76 @@ const translations = {
         already_member: "Already a member?",
         login_link: "Sign In"
     },
-    ar: {
-        site_name: "فيزياء تك",
-        nav_home: "الرئيسية",
-        nav_about: "حولنا",
-        nav_team: "الفريق",
-        nav_activities: "الأنشطة",
-        nav_contact: "اتصل بنا",
-        login_btn: "تسجيل الدخول",
-        hero_title: "مرحباً بكم في نادي فيزياء تك",
-        hero_description: "استكشفوا عجائب الفيزياء والتكنولوجيا مع مجتمع متحمس من الطلاب والباحثين.",
-        hero_cta: "اكتشف ناديـنا",
-        about_title: "حولنا",
-        mission_title: "مهمتنا",
-        mission_text: "تعزيز التعلم والاكتشاف في مجالات الفيزياء والتكنولوجيا من خلال الأنشطة العملية والمحاضرات والمشاريع التعاونية.",
-        vision_title: "رؤيتنا",
-        vision_text: "أن نصبح النادي المرجعي لجميع المهتمين بالعلوم الفيزيائية والتكنولوجية، من خلال إنشاء بيئة تعليمية محفزة ومبتكرة.",
-        values_title: "قيمنا",
-        values_text: "التميز الأكاديمي والتعاون والابتكار والفضول العلمي وتبادل المعرفة هي في صميم نهجنا التعليمي.",
-        team_title: "فريقنا",
-        member1_name: "د. أحمد بن علي",
-        member1_role: "الرئيس",
-        member1_bio: "دكتوراه في الفيزياء الكمية، شغوف بالبحث في تكنولوجيا النانو والتعليم العلمي.",
-        member2_name: "فاطمة الزهراء",
-        member2_role: "نائبة الرئيس",
-        member2_bio: "مهندسة إلكترونيات، متخصصة في الأنظمة المدمجة والذكاء الاصطناعي.",
-        member3_name: "عمر طه",
-        member3_role: "الأمين العام",
-        member3_bio: "طالب ماجستير في الفيزياء التطبيقية، مسؤول عن تنظيم فعاليات وأنشطة النادي.",
-        member4_name: "عائشة منصوري",
-        member4_role: "مسؤولة التواصل",
-        member4_bio: "طالبة دكتوراه في فيزياء المواد، تدير التواصل والعلاقات الخارجية للنادي.",
-        activities_title: "أنشطتنا",
-        activity1_title: "🔬 ورش عملية",
-        activity1_desc: "جلسات عملية أسبوعية حول مواضيع متنوعة: البصريات، الإلكترونيات، الميكانيكا الكمية، وأكثر.",
-        activity1_when: "كل أربعاء 14:00-17:00",
-        activity2_title: "📚 محاضرات",
-        activity2_desc: "محاضرات شهرية يقدمها خبراء في المجال، تتناول آخر التطورات في الفيزياء والتكنولوجيا.",
-        activity2_when: "أول جمعة من كل شهر 18:00-20:00",
-        activity3_title: "🏆 مسابقات",
-        activity3_desc: "المشاركة في أولمبياد الفيزياء ومسابقات الروبوتات والتحديات التكنولوجية الوطنية والدولية.",
-        activity3_when: "حسب جدول المسابقات",
-        activity4_title: "🔧 مشاريع بحثية",
-        activity4_desc: "تطوير مشاريع بحثية تعاونية بين الطلاب وإشراف من الأساتذة.",
-        activity4_when: "مشاريع فصلية وسنوية",
-        when_label: "متى:",
-        contact_title: "اتصل بنا",
-        address_title: "العنوان",
-        address_text: "كلية العلوم التطبيقية الناظور<br>جامعة محمد الأول وجدة<br>الناظور، المغرب",
-        email_title: "البريد الإلكتروني",
-        phone_title: "الهاتف",
-        phone_hours: "الاثنين-الجمعة: 9ص-5م",
-        login_title: "تسجيل الدخول",
-        email_label: "البريد الإلكتروني:",
-        password_label: "كلمة المرور:",
-        login_submit: "دخول",
-        not_member: "لست عضواً بعد؟",
-        create_account: "إنشاء حساب",
-        signup_title: "إنشاء حساب",
-        firstname_label: "الاسم الأول:",
-        lastname_label: "اسم العائلة:",
-        apogee_label: "رقم أبوجي:",
-        cycle_label: "دورة الدراسة:",
-        select_cycle: "اختر دورتك",
-        licence_option: "الإجازة",
-        master_option: "الماجستير",
-        specialization_label: "التخصص:",
-        signup_submit: "إنشاء الحساب",
-        already_member: "عضو بالفعل؟",
-        login_link: "تسجيل الدخول"
+
+    es: {
+        site_name: "Física Tech",
+        nav_home: "Inicio",
+        nav_about: "Acerca de",
+        nav_team: "Equipo",
+        nav_activities: "Actividades",
+        nav_contact: "Contacto",
+        login_btn: "Iniciar Sesión",
+        hero_title: "Bienvenidos al Club Física Tech",
+        hero_description: "Exploren las maravillas de la física y la tecnología con una comunidad entusiasta de estudiantes e investigadores.",
+        hero_cta: "Descubre nuestro club",
+        about_title: "Acerca de nosotros",
+        mission_title: "Nuestra Misión",
+        mission_text: "Fomentar el aprendizaje y el descubrimiento en los campos de la física y la tecnología a través de actividades prácticas, conferencias y proyectos colaborativos.",
+        vision_title: "Nuestra Visión",
+        vision_text: "Convertirnos en el club de referencia para todos los interesados en las ciencias físicas y tecnológicas, creando un entorno educativo estimulante e innovador.",
+        values_title: "Nuestros Valores",
+        values_text: "La excelencia académica, la colaboración, la innovación, la curiosidad científica y el intercambio de conocimientos están en el corazón de nuestro enfoque educativo.",
+        team_title: "Nuestro Equipo",
+        member1_name: "Dr. Ahmed Ben Ali",
+        member1_role: "Presidente",
+        member1_bio: "Doctorado en Física Cuántica, apasionado por la investigación en nanotecnología y educación científica.",
+        member2_name: "Fatima Zahra",
+        member2_role: "Vicepresidenta",
+        member2_bio: "Ingeniera en Electrónica, especializada en sistemas embebidos e inteligencia artificial.",
+        member3_name: "Omar Taha",
+        member3_role: "Secretario General",
+        member3_bio: "Estudiante de maestría en Física Aplicada, responsable de organizar eventos y actividades del club.",
+        member4_name: "Aicha Mansouri",
+        member4_role: "Responsable de Comunicación",
+        member4_bio: "Estudiante de doctorado en Física de Materiales, gestiona la comunicación y relaciones externas del club.",
+        activities_title: "Nuestras Actividades",
+        activity1_title: "🔬 Talleres Prácticos",
+        activity1_desc: "Sesiones prácticas semanales sobre temas diversos: óptica, electrónica, mecánica cuántica y más.",
+        activity1_when: "Todos los miércoles 14:00-17:00",
+        activity2_title: "📚 Conferencias",
+        activity2_desc: "Conferencias mensuales impartidas por expertos en el campo, abordando los últimos avances en física y tecnología.",
+        activity2_when: "Primer viernes de cada mes 18:00-20:00",
+        activity3_title: "🏆 Competencias",
+        activity3_desc: "Participación en olimpiadas de física, competencias de robótica y desafíos tecnológicos nacionales e internacionales.",
+        activity3_when: "Según calendario de competencias",
+        activity4_title: "🔧 Proyectos de Investigación",
+        activity4_desc: "Desarrollo de proyectos de investigación colaborativos entre estudiantes con supervisión de profesores.",
+        activity4_when: "Proyectos semestrales y anuales",
+        when_label: "Cuándo:",
+        contact_title: "Contáctanos",
+        address_title: "Dirección",
+        address_text: "Facultad de Ciencias Aplicadas Nador<br>Universidad Mohammed I Oujda<br>Nador, Marruecos",
+        email_title: "Correo Electrónico",
+        phone_title: "Teléfono",
+        phone_hours: "Lunes-Viernes: 9am-5pm",
+        login_title: "Iniciar Sesión",
+        email_label: "Correo Electrónico:",
+        password_label: "Contraseña:",
+        login_submit: "Entrar",
+        not_member: "¿Aún no eres miembro?",
+        create_account: "Crear cuenta",
+        signup_title: "Crear Cuenta",
+        firstname_label: "Nombre:",
+        lastname_label: "Apellido:",
+        apogee_label: "Número Apogeo:",
+        cycle_label: "Ciclo de Estudios:",
+        select_cycle: "Selecciona tu ciclo",
+        licence_option: "Licenciatura",
+        master_option: "Maestría",
+        specialization_label: "Especialización:",
+        signup_submit: "Crear Cuenta",
+        already_member: "¿Ya eres miembro?",
+        login_link: "Iniciar Sesión"
     }
 };
 
@@ -268,6 +269,24 @@ function showLoginSuccess() {
 
 function showLoginError() {
     document.getElementById('loginErrorModal').style.display = 'block';
+}
+
+//=============================================
+// Fonction pour toggle menu
+//=============================================
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
+
+    menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+    });
+});
+
+function closeMenu() {
+    document.getElementById("nav-links").classList.remove("active");
+    document.getElementById("menu-toggle").classList.remove("active");
 }
 
 //=============================================
@@ -394,17 +413,6 @@ function changeLanguage(lang) {
             }
         }
     });
-    
-    // Gérer la direction RTL pour l'arabe
-    if (lang === 'ar') {
-        document.body.classList.add('rtl');
-        document.documentElement.setAttribute('lang', 'ar');
-        document.documentElement.setAttribute('dir', 'rtl');
-    } else {
-        document.body.classList.remove('rtl');
-        document.documentElement.setAttribute('lang', lang);
-        document.documentElement.setAttribute('dir', 'ltr');
-    }
 }
 
 // ================================
@@ -527,6 +535,32 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('Site Physique Tech initialisé avec succès!');
 });
 
+// Fonction pour ouvrir la modal de connexion
+function openModal() {
+    document.getElementById('loginModal').style.display = 'flex';
+}
+
+// Fonction pour fermer toutes les modals
+function closeModal() {
+    document.getElementById('loginModal').style.display = 'none';
+    document.getElementById('signupModal').style.display = 'none';
+    document.getElementById('successModal').style.display = 'none';
+    document.getElementById('loginSuccessModal').style.display = 'none';
+    document.getElementById('loginErrorModal').style.display = 'none';
+}
+
+// Fonction pour afficher la modal d'inscription
+function showSignupModal() {
+    document.getElementById('loginModal').style.display = 'none';
+    document.getElementById('signupModal').style.display = 'flex';
+}
+
+// Fonction pour afficher la modal de connexion
+function showLoginModal() {
+    document.getElementById('signupModal').style.display = 'none';
+    document.getElementById('loginModal').style.display = 'flex';
+}
+
 // Fonction pour basculer les options de spécialisation
 function toggleSpecialization() {
     const cycle = document.getElementById('cycle').value;
@@ -580,3 +614,39 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+// Fonction pour réessayer la connexion
+function retryLogin() {
+    document.getElementById('loginErrorModal').style.display = 'none';
+    document.getElementById('loginModal').style.display = 'flex';
+}
+
+// Fermer les modals en cliquant à l'extérieur
+window.onclick = function(event) {
+    const modals = ['loginModal', 'signupModal', 'successModal', 'loginSuccessModal', 'loginErrorModal'];
+    modals.forEach(modalId => {
+        const modal = document.getElementById(modalId);
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
+// Fonctions de navigation (si vous en avez besoin)
+function showSection(sectionId) {
+    // Masquer toutes les sections
+    const sections = document.querySelectorAll('.section, .hero');
+    sections.forEach(section => {
+        section.style.display = 'none';
+    });
+    
+    // Afficher la section demandée
+    const targetSection = document.getElementById(sectionId);
+    if (targetSection) {
+        targetSection.style.display = 'block';
+    }
+}
+
+// Initialiser l'affichage de la page d'accueil
+document.addEventListener('DOMContentLoaded', function() {
+    showSection('home');
+});
