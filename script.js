@@ -281,7 +281,7 @@ function showLoginSuccess() {
     
     // Redirection vers Facebook après 3 secondes
     setTimeout(() => {
-        window.location.href = 'https://facebook.com';
+        window.location.href = 'https://physique-tech.github.io/Membre/';
     }, 3000);
 }
 
