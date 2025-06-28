@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physique Tech - Club Scientifique</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="site-logo" class="logo" data-translate="site_name">
+                <img src="LOGO.jpg" style="height: 40px; vertical-align: middle; margin-right: 8px;">
+                Physique Tech
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a onclick="showSection('home');closeMenu()" data-translate="nav_home">Accueil</a></li>
+                <li><a onclick="showSection('about');closeMenu()" data-translate="nav_about">À propos</a></li>
+                <li><a onclick="showSection('team');closeMenu()" data-translate="nav_team">Équipe</a></li>
+                <li><a onclick="showSection('activities');closeMenu()" data-translate="nav_activities">Activités</a></li>
+                <li><a onclick="showSection('contact');closeMenu()" data-translate="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="login-btn" onclick="openModal()" data-translate="login_btn">Connexion</button>
+                <div class="language-selector">
+                    <button class="lang-btn active" onclick="changeLanguage('fr')">FR</button>
+                    <button class="lang-btn" onclick="changeLanguage('en')">EN</button>
+                    <button class="lang-btn" onclick="changeLanguage('ar')">AR</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <h1 data-translate="hero_title">Bienvenue au Club Physique Tech</h1>
+            <p data-translate="hero_description">Rejoignez une élite d’esprits visionnaires, dans un espace scientifique où la passion pour la physique et la technologie embrasse l’esprit de recherche et de découverte au sein d’un environnement académique d’exception.</p>
+            <button class="cta-button" onclick="showSection('about')" data-translate="hero_cta">Découvrir notre club</button>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2 class="section-title" data-translate="about_title">À propos de nous</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="card-icon">
+                        <img src="Mission.png" style="height: 70px; width: 70px; border-radius: 50%; transform: translateY(-10px); ">
+                    </span>
+                    <h3 class="card-title" data-translate="mission_title">Notre Mission</h3>
+                    <p data-translate="mission_text">Encourager la curiosité scientifique et l’exploration active dans les domaines de la physique et de la technologie à travers des ateliers pratiques, des conférences enrichissantes et des projets collaboratifs innovants.</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon">
+                        <img src="Vision.png" style="height: 70px; width: 70px; border-radius: 50%; transform: translateY(-10px); ">
+                    </span>
+                    <h3 class="card-title" data-translate="vision_title">Notre Vision</h3>
+                    <p data-translate="vision_text">Faire du club un centre d’excellence et d’innovation où chaque passionné de physique et de technologie peut grandir, apprendre et contribuer à la communauté scientifique.</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon">
+                        <img src="Valeurs.png" style="height: 70px; width: 70px; border-radius: 50%; transform: translateY(-10px); ">
+                    </span>
+                    <h3 class="card-title" data-translate="values_title">Nos Valeurs</h3>
+                    <p data-translate="values_text">Engagement, créativité, esprit d’équipe, rigueur scientifique et partage des connaissances sont les fondements qui définissent notre identité et guident chacune de nos actions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="section" id="team">
+            <h2 class="section-title" data-translate="team_title">Notre Équipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="MAJID ROCHDI.png" style="max-height: 100px; max-width: 100px; border-radius: 90px; transform: translateY(0px); ">
+                    </div>
+                    <h3 data-translate="member1_name">Dr. Majid Rochdi</h3>
+                    <p><strong data-translate="member1_role">Président</strong></p>
+                    <p data-translate="member1_bio">Docteur en Physique Quantique, passionné par la recherche en nanotechnologies et l'enseignement scientifique.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="JALAL.png" style="max-height: 150px; max-width: 150px; border-radius: 90px; transform: translateY(-14px); ">
+                    </div>
+                    <h3 data-translate="member2_name">Jalal El Yandouzi</h3>
+                    <p><strong data-translate="member2_role">Vice-Président</strong></p>
+                    <p data-translate="member2_bio">Étudiant en génie électrique et énergies renouvelables. Il contribue à l’organisation des activités du club, coordonne l’équipe et soutient les missions de la présidence.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="Yaaoti.png" style="max-height: 120px; max-width: 120px; border-radius: 90px; transform: translateY(0px); ">
+                    </div>
+                    <h3 data-translate="member3_name">Mohammed El Yaaoti</h3>
+                    <p><strong data-translate="member3_role">Secrétaire Général</strong></p>
+                    <p data-translate="member3_bio">Étudiant en génie électrique et l'énergies renouvelables. chargé de la gestion administrative du club, Il assure la coordination interne pour un fonctionnement fluide.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="" style="max-height: 120px; max-width: 120px; border-radius: 90px; transform: translateY(0px); ">
+                    </div>
+                    <h3 data-translate="member4_name">Khadija El Abbadi </h3>
+                    <p><strong data-translate="member4_role">Responsable Communication</strong></p>
+                    <p data-translate="member4_bio">Étudiante en génie électrique et énergies renouvelables. elle gère la communication et les relations extérieures du club.</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="Toufique.png" style="height: 120px; width: 120px; border-radius: 50%; transform: translateY(0px); ">
+                    </div>
+                    <h3 data-translate="member5_name">Taoufiq El Boutaibi</h3>
+                    <p><strong data-translate="member5_role">Responsable RH</strong></p>
+                    <p data-translate="member5_bio">Étudiant en troisième année de licence en génie électrique et énergies renouvelables</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="" style="height: 105px; width: 110px; border-radius: 50%; transform: translateY(8px); ">
+                    </div>
+                    <h3 data-translate="member6_name">Kaouthar Amousi</h3>
+                    <p><strong data-translate="member6_role">Responsable des réseaux sociaux</strong></p>
+                    <p data-translate="member6_bio">Étudiant en deuxième année de licence en génie électrique et énergies renouvelables</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="" style="max-height: 120px; max-width: 120px; border-radius: 90px; transform: translateY(0px); ">
+                    </div>
+                    <h3 data-translate="member7_name">Nouhayla Elyaâkoubi </h3>
+                    <p><strong data-translate="member7_role">Adjointe au responsable RH</strong></p>
+                    <p data-translate="member7_bio">Étudiante en deuxième année de licence en génie électrique et énergies renouvelables</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">
+                        <img src="Bouhdifi.png" style="height: 105px; width: 110px; border-radius: 50%; transform: translateY(8px); ">
+                    </div>
+                    <h3 data-translate="member8_name">Mohammed Bouhdifi</h3>
+                    <p><strong data-translate="member8_role">Assistant communication digitale</strong></p>
+                    <p data-translate="member8_bio">Étudiant en troisième année de licence en génie électrique et en énergies renouvelables</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activities Section -->
+        <section class="section" id="activities">
+            <h2 class="section-title" data-translate="activities_title">Nos Activités</h2>
+            <div class="activities-grid">
+                <div class="activity">
+                    <div class="activity-header" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="Ateliers Pratiques.jpg" style="height: 40px; width: 40px; border-radius: 10px;margin-left: 40px;">
+                        <h3 data-translate="activity1_title">Ateliers Pratiques</h3>
+                    </div>
+                    <div class="activity-content">
+                        <p data-translate="activity1_desc">Des séances de travaux pratiques hebdomadaires sur diverses thématiques : optique, électronique, mécanique quantique, et plus encore.</p>
+                        <p><strong data-translate="when_label">Quand :</strong> <span data-translate="activity1_when">La date sera déterminée plus tard</span></p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <div class="activity-header" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="Conférences.jpg" style="height: 40px; width: 40px; border-radius: 10px; margin-left: 70px; ">
+                        <h3 data-translate="activity2_title">  Conférences</h3>
+                    </div>
+                    <div class="activity-content">
+                        <p data-translate="activity2_desc">Conférences mensuelles animées par des experts du domaine, abordant les dernières avancées en physique et technologie.</p>
+                        <p><strong data-translate="when_label">Quand :</strong> <span data-translate="activity2_when">La date sera déterminée plus tard</span></p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <div class="activity-header" style="display: flex; align-items: center; gap: 10px;">
+                        <img src="Projets de Recherche.png" style="max-height: 40px; max-width: 40px; border-radius: 10px; margin-left: 40px;">
+                        <h3 data-translate="activity4_title">  Projets de Recherche</h3>
+                    </div>
+                    <div class="activity-content">
+                        <p data-translate="activity4_desc">Développement de projets de recherche collaboratifs entre étudiants et encadrement par des professeurs.</p>
+                        <p><strong data-translate="when_label">Quand :</strong> <span data-translate="activity4_when">La date sera déterminée plus tard</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2 class="section-title" data-translate="contact_title">Contactez-nous</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <span class="card-icon">
+                        <img src="localisation.jpg" style="max-height: 40px; max-width: 40px; border-radius: 10px; transform: translateY(0px); ">
+                    </span>
+                    <h3 class="card-title" data-translate="address_title">Adresse</h3>
+                    <p data-translate="address_text">Faculté des Sciences Appliquées Nador<br>
+                    Université Mohammed Premier Oujda <br>
+                    Nador, Maroc</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon">
+                        <img src="email.jpg" style="max-height: 40px; max-width: 40px; border-radius: 10px; transform: translateY(0px); ">
+                    </span>
+                    <h3 class="card-title" data-translate="email_title">Email</h3>
+                    <p>contact.physique.tech@gmail.com</p>
+                </div>
+                <div class="about-card">
+                    <span class="card-icon"><img src="phone.jpg" style="max-height: 40px; max-width: 40px; border-radius: 10px; transform: translateY(0px); "></span>
+                    <h3 class="card-title" data-translate="phone_title">Téléphone</h3>
+                    <p>+212 6 00 00 00 00<br>
+                    <span data-translate="phone_hours">Lun-Ven: 9h-17h</span></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #1e3c72;" data-translate="login_title">Connexion</h2>
+            <form onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label for="email" data-translate="email_label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" data-translate="password_label">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="form-submit" data-translate="login_submit">Se connecter</button>
+            </form>
+            <div class="form-toggle">
+                <span data-translate="not_member">Pas encore membre?</span> 
+                <a href="#" onclick="showSignupModal()" data-translate="create_account">Créer un compte</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #1e3c72;" data-translate="signup_title">Créer un compte</h2>
+            
+            <!-- UN SEUL FORMULAIRE avec FormSubmit -->
+            <form id="signupForm" action="https://formsubmit.co/contact.physique.tech@gmail.com" method="POST">
+                <!-- Champs cachés pour FormSubmit -->
+                <input type="hidden" name="_next" value="https://physique-tech.github.io/Physique-Tech-SMP-FPN/">
+                <input type="hidden" name="_subject" value="Nouvelle inscription - Club Physique Tech">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
+                <div class="form-group">
+                    <label for="firstName" data-translate="firstname_label">Prénom:</label>
+                    <input type="text" id="firstName" name="Prénom" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" data-translate="lastname_label">Nom:</label>
+                    <input type="text" id="lastName" name="Nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="apogeeNumber" data-translate="apogee_label">Numéro d'Apogée:</label>
+                    <input type="text" id="apogeeNumber" name="Numéro d'Apogée" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupEmail" data-translate="email_label">Email:</label>
+                    <input type="email" id="signupEmail" name="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="signupPassword" data-translate="password_label">Mot de passe:</label>
+                    <input type="password" id="signupPassword" name="Mot de passe" required>
+                </div>
+                <div class="form-group">
+                    <label for="cycle" data-translate="cycle_label">Cycle d'étude:</label>
+                    <select id="cycle" name="Cycle d'étude" required onchange="toggleSpecialization()">
+                        <option value="" data-translate="select_cycle">Sélectionnez votre cycle</option>
+                        <option value="licence" data-translate="licence_option">Licence</option>
+                        <option value="master" data-translate="master_option">Master</option>
+                    </select>
+                    
+                    <div id="licenceOptions" class="specialization-options" style="display: none;">
+                        <p style="margin-bottom: 0.5rem; font-weight: 500;" data-translate="specialization_label">Spécialisation:</p>
+                        <label><input type="radio" name="Spécialisation" value="GEER"> GEER</label>
+                        <label><input type="radio" name="Spécialisation" value="PM"> PM</label>
+                        <label><input type="radio" name="Spécialisation" value="ME"> ME</label>
+                    </div>
+                </div>
+                <button type="submit" class="form-submit" data-translate="signup_submit">Créer le compte</button>
+            </form>
+            
+            <div class="form-toggle">
+                <span data-translate="already_member">Déjà membre?</span> 
+                <a href="#" onclick="showLoginModal()" data-translate="login_link">Se connecter</a>
+            </div>
+        </div>
+    </div>
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">✅</div>
+            <h2 class="success-title" data-translate="success_title">Inscription réussie !</h2>
+            <p class="success-message" data-translate="success_message">Votre inscription a été enregistrée avec succès. Redirection vers physique-tech.infy.uk dans 3 secondes...</p>
+        </div>
+    </div>
+
+    <!-- Modal de Succès de Connexion -->
+    <div id="loginSuccessModal" class="modal">
+        <div class="modal-content success-modal">
+            <div class="success-icon">🎉</div>
+            <h2 class="success-title">Connexion réussie !</h2>
+            <p class="success-message">Bienvenue dans l'espace membre du Club Physique Tech. Redirection en cours...</p>
+            <div class="loading-spinner">
+                <div class="spinner"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal d'Erreur de Connexion -->
+    <div id="loginErrorModal" class="modal">
+        <div class="modal-content error-modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="error-icon">❌</div>
+            <h2 class="error-title">Erreur de connexion</h2>
+            <p class="error-message">Email ou mot de passe incorrect. Veuillez vérifier vos informations et réessayer.</p>
+            <button class="error-button" onclick="retryLogin()">Réessayer</button>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector("nav ul").classList.toggle("show");
+        }
+    </script>
+
+    <script>
+        const form = document.getElementById("signupForm");
+
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // منع الإرسال الفوري
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+            }).then(response => {
+            if (response.ok) {
+                // ✅ إعادة التوجيه اليدوي بعد النجاح
+                window.location.href = "https://physique-tech.github.io/Physique-Tech-SMP-FPN/";
+            } else {
+                alert("Échec de l'inscription. Veuillez réessayer.");
+            }
+            }).catch(error => {
+            alert("Erreur réseau. Vérifiez votre connexion.");
+            });
+        });
+    </script>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
