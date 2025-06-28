@@ -276,7 +276,7 @@ function handleLogin(event) {
         { 
             email: 'khadija.elabbadi.fpn24@ump.ac.ma', 
             password: 'Khadija@2006',
-            name: 'Mohammed Bouhdifi'
+            name: 'Khadija El Abbadi'
         },
         { 
             email: 'nouhayla.elyaakoubi.fpn24@ump.ac.ma', 
